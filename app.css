@@ -49,6 +49,9 @@ p {
     position: relative;
     box-sizing: border-box;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .grid-item:nth-child(1){
@@ -105,7 +108,7 @@ p {
 
 .grid-item p {
     background: rgba(000,000,000, .3);
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
     padding: 0.8em 0.8em 1.8em;
@@ -153,7 +156,7 @@ select {
     display: block;
 }
 
-#btn {
+.btn {
     display: inline-block;
     background: #ccc;
     padding: 0.8em;
@@ -161,7 +164,7 @@ select {
     transition: ease 0.3s all;
 }
 
-#btn:hover {
+.btn:hover {
     background: #777;
     color: #fff;
     cursor: pointer;
